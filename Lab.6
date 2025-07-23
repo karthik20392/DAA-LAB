@@ -1,0 +1,43 @@
+#!"C:\Strawberry\perl\bin\perl.exe" 
+
+use strict; 
+
+use warnings; 
+
+use CGI qw(:standard); 
+
+print "Content-type: text/html\n\n"; 
+
+print "<html><head><title>Greeting Page</title></head><body>"; 
+
+print "<h1>Greetings!</h1>"; 
+
+my $p = param("p") || ""; 
+
+if ($p) 
+
+{ 
+
+ my @greetings = ("Good morning", "Welcome", "How are you doing?", 
+
+"Hello!"); 
+
+ my $i = int rand @greetings; 
+
+ print "<p><strong>Hi $p, $greetings[$i]!</strong></p>";
+}
+print qq( 
+
+ <form method="GET"> 
+
+ <label for="p">Username: </label> 
+
+ <input type="text" name="p" id="p"> 
+
+ <input type="submit" value="Submit"> 
+
+ </form> 
+
+); 
+
+print "</body></html>";
