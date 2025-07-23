@@ -1,0 +1,41 @@
+
+top.html
+<!DOCTYPE html>
+<html>
+<body style="background-color: lightblue;">
+<center><h2>Welcome to MVBS College</h2></center>
+</body> </html>
+left.html
+<!DOCTYPE html>
+<html>
+<body style="background-color: lightgray;">
+<h3>Navigation</h3>
+<ul>
+<li><a href="right.html" target="rightFrame">Home</a></li> <li><a href="#" target="rightFrame">Courses</a></li> <li><a href="#" target="rightFrame">Contact</a></li>
+</ul>
+</body>
+</html>
+right.html
+<!DOCTYPE html>
+<html>
+MEWA
+VANGUARD
+<body style="background-color: white;"> "NESS SCHOOL
+<h3>Content Area</h3>
+<p>This is where page content will appear.</p>City University & Approved by AICTE </body>
+</html>
+main.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Frameset Example</title>
+</head>
+<frameset rows="20%, 80%">
+<!-- Top Frame -->
+<frame src="top.html" name="topFrame">
+<!-- Split lower part into two columns -->
+<frameset cols="30%, 70%">
+<frame src="left.html" name="leftFrame">
+<frame src="right.html" name="rightFrame"> </frameset>
+</frameset>
+</html>
